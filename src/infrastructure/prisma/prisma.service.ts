@@ -1,10 +1,10 @@
 import { Global, Injectable } from "@nestjs/common";
-import { PrismaClient } from "../../generated/prisma/client"
+import { PrismaClient } from "./generated/prisma/client.js";
 import { PrismaPg } from "@prisma/adapter-pg";
 
 @Global()
 @Injectable()
-export class OrmService extends PrismaClient {
+export class PrismaService extends PrismaClient {
   constructor() {
     const adapter = new PrismaPg({
       connectionString: process.env.DATABASE_URL as string,

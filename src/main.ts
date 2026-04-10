@@ -22,8 +22,8 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
 
   const config = new DocumentBuilder()
-    .setTitle('Freelance OS API')
-    .setDescription('The core API documentation for Freelance OS')
+    .setTitle('NESTJS FASTIFY CLEAN ARCHITECTURE BOILERPLATE')
+    .setDescription('The core API documentation for NESTJS FASTIFY CLEAN ARCHITECTURE BOILERPLATE')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
